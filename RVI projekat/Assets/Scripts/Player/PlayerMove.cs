@@ -6,10 +6,11 @@ public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed = 3; 
     public float leftRigthSpeed = 4;
+    public Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -22,12 +23,16 @@ public class PlayerMove : MonoBehaviour
                 transform.Translate(Vector3.left * Time.deltaTime * leftRigthSpeed);
             }
         }
-
+        
         if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)){
             if(this.gameObject.transform.position.x < LevelBoundary.rightSide){
                
                 transform.Translate(Vector3.right * Time.deltaTime * leftRigthSpeed);
             }
+        }
+        if (Input.GetButtonDown("Jump"))
+        {
+            rb.AddForce(new Vector3(0, 3, 0), ForceMode.Impulse);
         }
     }
 }
