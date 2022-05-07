@@ -34,5 +34,14 @@ public class PlayerMove : MonoBehaviour
         {
             rb.AddForce(new Vector3(0, 3, 0), ForceMode.Impulse);
         }
+        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)){
+            moveSpeed = 15;
+        }
+        else{
+            moveSpeed = 3;
+        }
+        
+        
+
     }
 }
