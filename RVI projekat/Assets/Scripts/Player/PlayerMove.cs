@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float moveSpeed = 3; 
+    public float moveSpeed = 5; 
     public float leftRigthSpeed = 4;
     // Start is called before the first frame update
     
@@ -30,7 +30,7 @@ public class PlayerMove : MonoBehaviour
             moveSpeed = 15;
         }
         else{
-            moveSpeed = 3;
+            moveSpeed = 5;
         }
     }
 }
