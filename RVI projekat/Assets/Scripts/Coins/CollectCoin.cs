@@ -6,6 +6,7 @@ public class CollectCoin : MonoBehaviour
 {
     // Start is called before the first frame update
     public AudioSource coinFX;
+    
     void Start()
     {
         
@@ -19,6 +20,7 @@ public class CollectCoin : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         coinFX.Play();
+
         CollectableControl.coinCount += 1;
         this.gameObject.SetActive(false);
     }
