@@ -31,6 +31,7 @@ public class Distance : MonoBehaviour
 
     IEnumerator AddingDis(float ws){
         disRun += 1;
+        CollectableControl.distanceCount += 1;
         disDisplay.GetComponent<Text>().text = "" + disRun;
         yield return new WaitForSeconds(ws);
         isAddingDis = false;

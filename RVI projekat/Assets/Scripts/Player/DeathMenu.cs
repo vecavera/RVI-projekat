@@ -6,6 +6,7 @@ public class DeathMenu: MonoBehaviour
 {
     public Text scoreText;
     public Text highscore;
+    public Text distanceText;
     public Image backgroundImg;
     private bool isShowned = false;
     private float transition = 0.0f;
@@ -24,11 +25,12 @@ public class DeathMenu: MonoBehaviour
         transition += Time.deltaTime;
         backgroundImg.color = Color.Lerp(new Color(0,0,0,0),Color.black,transition);
     }
-    public void ToggleEndMenu(int score)
+    public void ToggleEndMenu(int score, int distance)
     {
        
         gameObject.SetActive(true);
         scoreText.text = (score.ToString());
+        distanceText.text = (distance.ToString());
         isShowned = true;
         CollectableControl.coinCount = 0;
         

@@ -32,7 +32,7 @@ public class Healthbar : MonoBehaviour
             player.GetComponent<PlayerMove>().enabled = false;
             //if(PlayerPrefs.GetFloat("Highscore") < CollectableControl.coinCount)
             //PlayerPrefs.SetFloat("Highscore",(float)CollectableControl.coinCount)
-            deathMenu.ToggleEndMenu(CollectableControl.coinCount);
+            deathMenu.ToggleEndMenu(CollectableControl.coinCount, CollectableControl.distanceCount);
            
         }
         UpdateHealthbar();
