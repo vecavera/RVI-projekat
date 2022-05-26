@@ -28,9 +28,12 @@ public class Healthbar : MonoBehaviour
         if(hitpoint <= 0)
         {
             hitpoint = 0;
-            if(PlayerPrefs.GetFloat("Highscore") < CollectableControl.coinCount)
-              PlayerPrefs.SetFloat("Highscore",(float)CollectableControl.coinCount);
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<PlayerMove>().enabled = false;
+            //if(PlayerPrefs.GetFloat("Highscore") < CollectableControl.coinCount)
+            //PlayerPrefs.SetFloat("Highscore",(float)CollectableControl.coinCount)
             deathMenu.ToggleEndMenu(CollectableControl.coinCount);
+           
         }
         UpdateHealthbar();
     }

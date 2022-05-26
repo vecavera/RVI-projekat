@@ -26,10 +26,12 @@ public class DeathMenu: MonoBehaviour
     }
     public void ToggleEndMenu(int score)
     {
+       
         gameObject.SetActive(true);
         scoreText.text = (score.ToString());
         isShowned = true;
         CollectableControl.coinCount = 0;
+        
     }
     public void Restart()
     {
