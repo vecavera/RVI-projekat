@@ -11,7 +11,7 @@ public class TriggerZone : MonoBehaviour
     {
         if (obj.gameObject.tag == "Player")
         {
-            obj.gameObject.SendMessage((isDamaging) ? "TakeDamage" : "HealDamage", Time.deltaTime * damage);
+            obj.gameObject.SendMessage("TakeDamage", Time.deltaTime * damage);
         }
     }
 }

@@ -6,6 +6,8 @@ public class CollectBottle : MonoBehaviour
 {
     public AudioSource bottleFX;
     public float heal = 5;
+    
+    
     private void OnTriggerEnter(Collider other) {
         bottleFX.Play();
         if (other.gameObject.tag == "Player")

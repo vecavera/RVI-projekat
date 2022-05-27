@@ -4002,7 +4002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottleFX: {fileID: 58544570}
-  heal: 5
+  heal: 1000
 --- !u!136 &463725215
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4274,7 +4274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottleFX: {fileID: 58544570}
-  heal: 5
+  heal: 1000
 --- !u!1001 &514865068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5740,7 +5740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottleFX: {fileID: 58544570}
-  heal: 5
+  heal: 1000
 --- !u!136 &635404710
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7891,7 +7891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottleFX: {fileID: 58544570}
-  heal: 5
+  heal: 1000
 --- !u!136 &909637730
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8003,7 +8003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottleFX: {fileID: 58544570}
-  heal: 5
+  heal: 1000
 --- !u!136 &916403211
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8046,7 +8046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottleFX: {fileID: 58544570}
-  heal: 5
+  heal: 1000
 --- !u!136 &928744679
 CapsuleCollider:
   m_ObjectHideFlags: 0
