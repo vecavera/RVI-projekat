@@ -682,7 +682,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: b917177ec5ef6efd1521b5e0bb6f4543
+      Hash: 1f5e8d3033b8b234f04d850a64bd49d0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CollectBottle
@@ -763,4 +763,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/SampleScene.unity
   - Assets/Scenes/QuitScene.unity
-  playerPath: C:/Users/HP/Desktop/RVI projekat.exe
+  playerPath: C:/Users/Windows 10/Desktop/RVI-projekat/RVI projekat.exe
